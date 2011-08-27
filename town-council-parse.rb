@@ -51,7 +51,7 @@ Dir.chdir("town-council-mintes")
 files = Dir.glob("*.txt")
 
 files.each do |f|
-  result = Calais.enlighten(:content => content, :content_type => :raw, output_format => :json, :license_id = "r6q88uv3d2pwjfrsr4e8d9j5")
+  result = Calais.enlighten(:content => content, :content_type => :raw, output_format => :json, :license_id => "r6q88uv3d2pwjfrsr4e8d9j5")
   
   # write the json result out to files
   File.open(f+".json", 'w') {|f| f.write(result.to_s) }
