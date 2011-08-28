@@ -39,7 +39,7 @@ rescue Nokogiri::XML::SyntaxError => e
 end
 
 # convert all the PDFs to text
-Dir.chdir("town-council-mintes")
+Dir.chdir("town-council-minutes")
 files = Dir.glob("*.pdf")
 
 files.each do |f|
@@ -47,7 +47,7 @@ files.each do |f|
 end
 
 # now send each of the PDFs through Open Calais
-Dir.chdir("town-council-mintes")
+Dir.chdir("town-council-minutes")
 files = Dir.glob("*.txt")
 
 files.each do |f|
